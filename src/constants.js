@@ -21,8 +21,7 @@ export const IMG_PRODUCT =
 export const IMG_FIELD =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuBH13L4uUfMO3rLTIg1U_GqejiiaUj_ASDUT-xuGf-qAd1B_wpHb0mD5OUZoiWHevPfNbdthrrpWnnTZJSyAeMUpcxTKme8WDJ5jj8WmDPNv7w0W9mKr2Ebibot98z4VDR-qZuxJv18M_b0c2EaiNTFZyBA7SU8_K8Ksbs2am2-pVFmfpjjwWTyyFhXIvl4uyQevIohFvKqk1TZtQ_ZYLvysZGrQQt01Mc0KaJzPu2AFaI0SJRYwiiM_0-wNSTY8P6-9vSIAZ6HGhYT'
 
-export const IMG_LAB =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBHloQ2nLrE84U80ytTJ9XsmUy8cXXrB9ykD3JrT9ss64ZKDUCInca2EHl1iOP-G2DRZdN4JzOGtsqkK_Kau2NmBkOU4gSfAUNPo69U9j2YhX6E66e3Ah9q8K0wOZ4-pHcogPo7R679atN9MlhVrP_qyp_2W6A8YDjo0ZRRyxnN7JT2ugdvZrusk95WxXbgpZrznGKIorGX3qT_HwoPbiYq6FrNX1uycwk-FYgaw02knpebquZwPaFmjM1lOW5mnIyRLRKeujVFHdGM'
+export const IMG_LAB = '/embalagem.jpeg'
 
 // ─── Vídeo ────────────────────────────────────────────────────────────────────
 // SUBSTITUA pelo ID real do vídeo no YouTube

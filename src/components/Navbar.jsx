@@ -37,13 +37,16 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-8 font-headline font-bold text-sm tracking-tight">
           {links.map((l) => (
-            <a
+            <motion.a
               key={l.href}
               href={l.href}
               className="text-slate-600 hover:text-green-700 transition-colors"
+              whileHover={{ y: -3 }}
+              whileTap={{ y: 0 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 18 }}
             >
               {l.label}
-            </a>
+            </motion.a>
           ))}
         </div>
 
