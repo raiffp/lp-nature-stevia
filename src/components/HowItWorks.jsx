@@ -26,10 +26,10 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-24 bg-surface px-8">
+    <section id="como-funciona" className="py-14 md:py-24 bg-surface px-5 md:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="max-w-2xl mb-16"
+          className="max-w-2xl mb-8 md:mb-16"
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"
@@ -38,10 +38,10 @@ export default function HowItWorks() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 block">
             Como Funciona
           </span>
-          <h2 className="text-4xl font-extrabold tracking-tight text-on-background mb-4">
+          <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-on-background mb-3">
             Comece a distribuir em 3 passos
           </h2>
-          <p className="text-on-surface-variant text-lg">
+          <p className="text-on-surface-variant text-sm md:text-lg">
             Processo simples, sem burocracia. Da conversa ao primeiro pedido em poucos dias.
           </p>
         </motion.div>
@@ -81,7 +81,7 @@ export default function HowItWorks() {
                   </span>
                 </motion.div>
 
-                <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
+                <h3 className="text-lg md:text-2xl font-bold mb-2">{step.title}</h3>
                 <p className="text-on-surface-variant leading-relaxed">{step.text}</p>
               </div>
 
@@ -94,7 +94,7 @@ export default function HowItWorks() {
         </motion.div>
 
         <motion.div
-          className="mt-14 text-center"
+          className="mt-8 md:mt-14 text-center"
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"

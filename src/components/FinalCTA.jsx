@@ -5,9 +5,9 @@ import { fadeInUp, viewportOnce } from '../animations'
 
 export default function FinalCTA() {
   return (
-    <section className="mx-8 mb-24">
+    <section className="mx-4 md:mx-8 mb-14 md:mb-24">
       <motion.div
-        className="max-w-7xl mx-auto rounded-[2rem] overflow-hidden relative bg-gradient-to-br from-primary via-primary-container to-tertiary p-12 lg:p-24 text-center"
+        className="max-w-7xl mx-auto rounded-[2rem] overflow-hidden relative bg-gradient-to-br from-primary via-primary-container to-tertiary p-8 md:p-12 lg:p-24 text-center"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -15,7 +15,7 @@ export default function FinalCTA() {
       >
         <div className="relative z-10 max-w-3xl mx-auto">
           <motion.h2
-            className="text-4xl lg:text-5xl font-extrabold text-on-primary-container mb-6 leading-tight"
+            className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-on-primary-container mb-4 md:mb-6 leading-tight"
             variants={fadeInUp}
             initial="hidden"
             whileInView="show"
@@ -25,7 +25,7 @@ export default function FinalCTA() {
           </motion.h2>
 
           <motion.p
-            className="text-xl text-on-primary-container/80 mb-10 font-body"
+            className="text-sm md:text-xl text-on-primary-container/80 mb-6 md:mb-10 font-body"
             variants={fadeInUp}
             initial="hidden"
             whileInView="show"

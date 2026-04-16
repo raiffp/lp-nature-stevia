@@ -28,10 +28,10 @@ function Stars() {
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-surface px-8">
+    <section className="py-14 md:py-24 bg-surface px-5 md:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-8 md:mb-16"
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"
@@ -40,7 +40,7 @@ export default function Testimonials() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 block">
             Parceiros
           </span>
-          <h2 className="text-4xl font-extrabold tracking-tight text-on-background">
+          <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-on-background">
             O que dizem nossos distribuidores
           </h2>
         </motion.div>
@@ -56,7 +56,7 @@ export default function Testimonials() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="bg-surface-container-lowest rounded-2xl p-8 shadow-sm border border-outline-variant/10"
+              className="bg-surface-container-lowest rounded-2xl p-5 md:p-8 shadow-sm border border-outline-variant/10"
               whileHover={{ scale: 1.02, boxShadow: '0 8px 32px rgba(0,0,0,0.07)' }}
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
             >

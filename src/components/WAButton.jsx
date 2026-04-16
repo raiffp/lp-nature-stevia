@@ -3,10 +3,10 @@ import WAIcon from './WAIcon'
 import { waUrl } from '../constants'
 
 const sizes = {
-  sm: 'px-6 py-2.5 text-sm gap-2',
-  md: 'px-8 py-3.5 text-base gap-2',
-  lg: 'px-10 py-4 text-lg gap-3',
-  xl: 'px-12 py-5 text-xl gap-3',
+  sm: 'px-4 py-2 text-xs gap-1.5 md:px-6 md:py-2.5 md:text-sm md:gap-2',
+  md: 'px-5 py-2.5 text-sm gap-2 md:px-8 md:py-3.5 md:text-base',
+  lg: 'px-6 py-3 text-sm gap-2 md:px-10 md:py-4 md:text-lg md:gap-3',
+  xl: 'px-6 py-3 text-sm gap-2 md:px-12 md:py-5 md:text-xl md:gap-3',
 }
 
 const iconSizes = { sm: 'w-4 h-4', md: 'w-4 h-4', lg: 'w-5 h-5', xl: 'w-6 h-6' }

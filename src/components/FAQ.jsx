@@ -30,7 +30,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
       transition={{ duration: 0.2 }}
     >
       <button
-        className="w-full flex items-center justify-between p-6 text-left font-bold text-on-surface text-lg gap-4"
+        className="w-full flex items-center justify-between p-4 md:p-6 text-left font-bold text-on-surface text-base md:text-lg gap-4"
         onClick={onToggle}
         aria-expanded={isOpen}
       >
@@ -54,7 +54,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <p className="px-6 pb-6 text-on-surface-variant leading-relaxed">{faq.a}</p>
+            <p className="px-4 pb-4 md:px-6 md:pb-6 text-sm md:text-base text-on-surface-variant leading-relaxed">{faq.a}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -66,10 +66,10 @@ export default function FAQ() {
   const [open, setOpen] = useState(null)
 
   return (
-    <section id="faq" className="py-24 bg-surface-container-low px-8">
+    <section id="faq" className="py-14 md:py-24 bg-surface-container-low px-5 md:px-8">
       <div className="max-w-3xl mx-auto">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-16"
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"
@@ -78,7 +78,7 @@ export default function FAQ() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 block">
             Dúvidas Frequentes
           </span>
-          <h2 className="text-4xl font-extrabold tracking-tight text-on-background">
+          <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-on-background">
             Perguntas de distribuidores
           </h2>
         </motion.div>

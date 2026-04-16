@@ -27,10 +27,10 @@ const cards = [
 
 export default function Benefits() {
   return (
-    <section id="beneficios" className="py-24 bg-surface px-8">
+    <section id="beneficios" className="py-14 md:py-24 bg-surface px-5 md:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="max-w-2xl mb-16"
+          className="max-w-2xl mb-8 md:mb-16"
           variants={fadeInUp}
           initial="hidden"
           whileInView="show"
@@ -39,7 +39,7 @@ export default function Benefits() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 block">
             Vantagens para Distribuidores
           </span>
-          <h2 className="text-4xl font-extrabold tracking-tight text-on-background mb-4">
+          <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-on-background mb-4">
             Por que distribuidores escolhem a Stevia Dul-C
           </h2>
         </motion.div>
@@ -54,7 +54,7 @@ export default function Benefits() {
           {/* Large hero card */}
           <motion.div
             variants={fadeInUp}
-            className="lg:col-span-3 bg-primary-container rounded-2xl p-10 relative overflow-hidden text-on-primary-container"
+            className="lg:col-span-3 bg-primary-container rounded-2xl p-6 md:p-10 relative overflow-hidden text-on-primary-container"
             whileHover={{ scale: 1.01 }}
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
           >
@@ -67,8 +67,8 @@ export default function Benefits() {
                   trending_up
                 </span>
               </div>
-              <h3 className="text-3xl font-extrabold mb-4">Alto Giro, Resultado Imediato</h3>
-              <p className="text-on-primary-container/80 text-lg leading-relaxed max-w-lg">
+              <h3 className="text-xl md:text-3xl font-extrabold mb-3">Alto Giro, Resultado Imediato</h3>
+              <p className="text-on-primary-container/80 text-sm md:text-lg leading-relaxed max-w-lg">
                 Stevia Dul-C é o adoçante natural mais buscado do mercado. Reconhecimento de marca consolidado garante recompra constante — menos esforço de venda, mais resultado no caixa.
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function Benefits() {
             <motion.div
               key={card.title}
               variants={fadeInUp}
-              className="bg-surface-container-lowest rounded-2xl p-8 shadow-sm border border-outline-variant/10"
+              className="bg-surface-container-lowest rounded-2xl p-5 md:p-8 shadow-sm border border-outline-variant/10"
               whileHover={{ scale: 1.02, boxShadow: '0 8px 32px rgba(0,0,0,0.08)' }}
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
             >
@@ -93,7 +93,7 @@ export default function Benefits() {
               >
                 <span className={`material-symbols-outlined ${card.iconColor}`}>{card.icon}</span>
               </motion.div>
-              <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2">{card.title}</h3>
               <p className="text-on-surface-variant leading-relaxed">{card.text}</p>
             </motion.div>
           ))}

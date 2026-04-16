@@ -11,7 +11,7 @@ const trustBadges = [
 
 export default function Hero() {
   return (
-    <section className="relative isolate min-h-screen flex items-center overflow-hidden px-8 lg:px-16 pt-20">
+    <section className="relative isolate min-h-screen flex items-center overflow-hidden px-5 md:px-8 lg:px-16 pt-20">
 
       {/* Vídeo de fundo — z-0 dentro do stacking context isolado da section */}
       <video
@@ -50,7 +50,7 @@ export default function Hero() {
         >
           <motion.span
             variants={fadeInUp}
-            className="inline-block py-1 px-3 mb-6 rounded-lg bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest font-label"
+            className="inline-block py-1 px-3 mb-4 rounded-lg bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest font-label"
           >
             Principal Importador de Stevia do Brasil
           </motion.span>
@@ -70,20 +70,20 @@ export default function Hero() {
 
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tighter text-on-background leading-none mb-6"
+            className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold tracking-tighter text-on-background leading-none mb-4 md:mb-6"
           >
             Adicione o Produto de Maior Giro do Mercado Natural ao Seu Portfólio
           </motion.h1>
 
           <motion.p
             variants={fadeInUp}
-            className="text-xl text-on-surface-variant font-body mb-8 max-w-xl leading-relaxed"
+            className="text-sm md:text-xl text-on-surface-variant font-body mb-5 md:mb-8 max-w-xl leading-relaxed"
           >
             Stevia Dul-C combina alta rotatividade e margem competitiva para distribuidores e lojas naturais. Resultado garantido desde o primeiro pedido.
           </motion.p>
 
           {/* Trust badges */}
-          <motion.div variants={stagger(0.08)} className="flex flex-wrap gap-4 mb-10">
+          <motion.div variants={stagger(0.08)} className="flex flex-wrap gap-3 mb-6 md:mb-10">
             {trustBadges.map((badge) => (
               <motion.span
                 key={badge}
@@ -101,12 +101,12 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
+          <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
             <WAButton msg={WA_MSGS.default} size="lg">
               Falar com um Consultor
             </WAButton>
             <motion.button
-              className="border border-outline-variant/30 text-on-surface px-10 py-4 rounded-full font-semibold text-lg"
+              className="border border-outline-variant/30 text-on-surface px-6 py-3 md:px-10 md:py-4 rounded-full font-semibold text-sm md:text-lg"
               whileHover={{ backgroundColor: 'rgba(223,241,251,0.9)', scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}

@@ -10,8 +10,8 @@ const highlights = [
 
 export default function Proof() {
   return (
-    <section className="py-24 bg-surface-container-low px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section className="py-14 md:py-24 bg-surface-container-low px-5 md:px-8 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
         {/* Images */}
         <motion.div
           className="relative"
@@ -56,10 +56,10 @@ export default function Proof() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary mb-4 block">
             Por que Stevia Dul-C?
           </span>
-          <h2 className="text-4xl font-extrabold tracking-tight text-on-background mb-8 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight text-on-background mb-5 md:mb-8 leading-tight">
             Pureza que se traduz em resultado no seu negócio.
           </h2>
-          <div className="space-y-6 text-lg text-on-surface-variant font-body">
+          <div className="space-y-4 text-sm md:text-lg text-on-surface-variant font-body">
             <p>
               Nossa liderança não é fruto do acaso. É o resultado de um processo de extração proprietário que elimina o amargor residual, entregando o dulçor mais limpo da categoria.
             </p>

@@ -19,8 +19,8 @@ const solutions = [
 
 export default function PainSolution() {
   return (
-    <section className="py-24 bg-surface-container-low px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <section className="py-14 md:py-24 bg-surface-container-low px-5 md:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start">
         {/* Pain */}
         <motion.div
           variants={fadeInLeft}
@@ -31,7 +31,7 @@ export default function PainSolution() {
           <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4 block">
             O Problema
           </span>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-on-background mb-8 leading-tight">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-extrabold text-on-background mb-5 md:mb-8 leading-tight">
             Produtos parados são dinheiro parado.
           </h2>
           <motion.div className="space-y-5" variants={stagger(0.1)} initial="hidden" whileInView="show" viewport={viewportOnce}>
@@ -46,7 +46,7 @@ export default function PainSolution() {
 
         {/* Solution */}
         <motion.div
-          className="bg-surface-container-lowest rounded-2xl p-10 shadow-sm border border-outline-variant/15"
+          className="bg-surface-container-lowest rounded-2xl p-6 md:p-10 shadow-sm border border-outline-variant/15"
           variants={fadeInRight}
           initial="hidden"
           whileInView="show"
@@ -55,7 +55,7 @@ export default function PainSolution() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary mb-4 block">
             A Solução
           </span>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-on-background mb-8 leading-tight">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-extrabold text-on-background mb-5 md:mb-8 leading-tight">
             O produto que trabalha por você.
           </h2>
           <motion.div className="space-y-5" variants={stagger(0.1)} initial="hidden" whileInView="show" viewport={viewportOnce}>

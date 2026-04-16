@@ -7,8 +7,8 @@ const logos = Array(5).fill(null)
 
 export default function LogosBar() {
   return (
-    <section className="py-12 bg-white border-y border-outline-variant/10">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="py-8 md:py-12 bg-white border-y border-outline-variant/10">
+      <div className="max-w-7xl mx-auto px-5 md:px-8">
         <motion.p
           className="text-center text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-8"
           variants={fadeInUp}
