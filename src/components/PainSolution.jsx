@@ -32,7 +32,7 @@ export default function PainSolution() {
             O Problema
           </span>
           <h2 className="text-xl md:text-3xl lg:text-4xl font-extrabold text-on-background mb-5 md:mb-8 leading-tight">
-            Produtos parados são dinheiro parado.
+            Produto parado é dinheiro parado.
           </h2>
           <motion.div className="space-y-5" variants={stagger(0.1)} initial="hidden" whileInView="show" viewport={viewportOnce}>
             {pains.map((p) => (
