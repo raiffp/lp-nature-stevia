@@ -111,7 +111,7 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
             >
-              Baixar Catálogo
+              Solicitar Catálogo
             </motion.button>
           </motion.div>
         </motion.div>
