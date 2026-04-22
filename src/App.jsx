@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import LogosBar from './components/LogosBar'
 import PainSolution from './components/PainSolution'
 import Benefits from './components/Benefits'
 import HowItWorks from './components/HowItWorks'
@@ -17,12 +16,11 @@ export default function App() {
       <Navbar />
       <main className="pt-20">
         <Hero />
-        <LogosBar />
         <PainSolution />
         <Benefits />
         <HowItWorks />
         <Proof />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <FAQ />
         <FinalCTA />
       </main>

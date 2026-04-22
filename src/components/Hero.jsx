@@ -11,7 +11,7 @@ const trustBadges = [
 
 export default function Hero() {
   return (
-    <section className="relative isolate min-h-screen flex items-center overflow-hidden px-5 md:px-8 lg:px-16 pt-20">
+    <section className="relative isolate min-h-screen flex items-start overflow-hidden px-5 md:px-8 lg:px-16 pt-28 lg:pt-36">
 
       {/* Vídeo de fundo — z-0 dentro do stacking context isolado da section */}
       <video
@@ -41,7 +41,7 @@ export default function Hero() {
       />
 
       {/* Conteúdo */}
-      <div className="max-w-7xl mx-auto w-full relative z-20">
+      <div className="max-w-7xl mx-auto w-full relative z-20 flex justify-center lg:justify-start">
         <motion.div
           className="max-w-2xl text-left"
           variants={stagger(0.1)}
