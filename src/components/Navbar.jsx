@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import WAButton from './WAButton'
 import { WA_MSGS } from '../constants'
+import logo from '../assets/logo.svg'
 
 const links = [
   { label: 'Benefícios', href: '#beneficios' },
@@ -28,12 +29,12 @@ export default function Navbar() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        <motion.span
-          className="text-2xl font-bold tracking-tighter text-green-900 font-headline select-none"
+        <motion.img
+          src={logo}
+          alt="Stevia Dul-C"
+          className="h-10 w-auto select-none"
           whileHover={{ scale: 1.02 }}
-        >
-          Stevia Dul-C
-        </motion.span>
+        />
 
         <div className="hidden md:flex items-center gap-8 font-headline font-bold text-sm tracking-tight">
           {links.map((l) => (
