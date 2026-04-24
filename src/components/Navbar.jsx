@@ -32,8 +32,9 @@ export default function Navbar() {
         <motion.img
           src={logo}
           alt="Stevia Dul-C"
-          className="h-10 w-auto select-none"
+          className="h-10 w-auto select-none cursor-pointer"
           whileHover={{ scale: 1.02 }}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         />
 
         <div className="hidden md:flex items-center gap-8 font-headline font-bold text-sm tracking-tight">

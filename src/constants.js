@@ -1,6 +1,6 @@
 // ─── WhatsApp ────────────────────────────────────────────────────────────────
 // SUBSTITUA pelo número real (formato: código do país + DDD + número)
-export const WA_NUMBER = '55XXXXXXXXXXX'
+export const WA_NUMBER = '5568992435350'
 
 export const WA_MSGS = {
   default:  'Olá! Tenho interesse em distribuir a Stevia Dul-C.',
