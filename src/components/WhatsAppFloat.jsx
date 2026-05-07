@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { track } from '@vercel/analytics'
 import WAIcon from './WAIcon'
 import { waUrl, WA_MSGS } from '../constants'
 
@@ -16,6 +17,7 @@ export default function WhatsAppFloat() {
         href={waUrl(WA_MSGS.float)}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => track('clique_whatsapp', { local: 'float' })}
         className="relative flex items-center gap-3 bg-[#25D366] text-white pl-4 pr-5 py-4 rounded-full shadow-2xl"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

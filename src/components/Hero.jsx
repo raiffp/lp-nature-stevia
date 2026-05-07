@@ -102,7 +102,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
-            <WAButton msg={WA_MSGS.default} size="lg">
+            <WAButton msg={WA_MSGS.default} size="lg" label="hero">
               Falar com um Consultor
             </WAButton>
             <motion.button

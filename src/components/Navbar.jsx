@@ -52,7 +52,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <WAButton msg={WA_MSGS.default} size="sm">
+        <WAButton msg={WA_MSGS.default} size="sm" label="navbar">
           Falar com Consultor
         </WAButton>
       </div>

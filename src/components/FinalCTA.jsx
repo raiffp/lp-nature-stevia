@@ -40,7 +40,7 @@ export default function FinalCTA() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <WAButton msg={WA_MSGS.proposta} size="xl" variant="white">
+            <WAButton msg={WA_MSGS.proposta} size="xl" variant="white" label="final_cta">
               Falar com Consultor no WhatsApp
             </WAButton>
           </motion.div>

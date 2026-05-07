@@ -100,7 +100,7 @@ export default function HowItWorks() {
           whileInView="show"
           viewport={viewportOnce}
         >
-          <WAButton msg={WA_MSGS.inicio} size="lg">
+          <WAButton msg={WA_MSGS.inicio} size="lg" label="como_funciona">
             Quero Ser Parceiro Agora
           </WAButton>
         </motion.div>

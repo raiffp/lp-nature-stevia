@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { track } from '@vercel/analytics'
 import WAIcon from './WAIcon'
 import { waUrl } from '../constants'
 
@@ -11,7 +12,7 @@ const sizes = {
 
 const iconSizes = { sm: 'w-4 h-4', md: 'w-4 h-4', lg: 'w-5 h-5', xl: 'w-6 h-6' }
 
-export default function WAButton({ msg, children, size = 'lg', className = '', variant = 'primary' }) {
+export default function WAButton({ msg, children, size = 'lg', className = '', variant = 'primary', label = 'botao' }) {
   const base =
     variant === 'primary'
       ? 'bg-gradient-to-br from-primary to-primary-container text-on-primary'
@@ -24,6 +25,7 @@ export default function WAButton({ msg, children, size = 'lg', className = '', v
       href={waUrl(msg)}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => track('clique_whatsapp', { local: label })}
       className={`inline-flex items-center rounded-full font-semibold ${base} ${sizes[size]} ${className}`}
       whileHover={{ scale: 1.04, boxShadow: '0 16px 40px rgba(13,99,27,0.25)' }}
       whileTap={{ scale: 0.96 }}
