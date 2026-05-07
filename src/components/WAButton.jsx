@@ -25,7 +25,10 @@ export default function WAButton({ msg, children, size = 'lg', className = '', v
       href={waUrl(msg)}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => track('clique_whatsapp', { local: label })}
+      onClick={() => {
+        track('clique_whatsapp', { local: label })
+        window.gtag_report_conversion()
+      }}
       className={`inline-flex items-center rounded-full font-semibold ${base} ${sizes[size]} ${className}`}
       whileHover={{ scale: 1.04, boxShadow: '0 16px 40px rgba(13,99,27,0.25)' }}
       whileTap={{ scale: 0.96 }}
